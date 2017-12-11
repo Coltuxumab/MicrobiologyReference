@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED12DC2A1FBA95A200FF373B /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED12DC281FBA95A100FF373B /* HandySwift.framework */; };
+		ED12DC2B1FBA95A200FF373B /* CSVImporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED12DC291FBA95A100FF373B /* CSVImporter.framework */; };
+		ED12DC2D1FBA95C700FF373B /* CSVImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12DC2C1FBA95C700FF373B /* CSVImport.swift */; };
+		ED12DC2F1FBA9BEB00FF373B /* CSVImporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED12DC291FBA95A100FF373B /* CSVImporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED12DC321FBA9BEE00FF373B /* HandySwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED12DC281FBA95A100FF373B /* HandySwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED12DC401FBAA3E600FF373B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12DC3F1FBAA3E600FF373B /* DataManager.swift */; };
+		ED12DC541FBE903900FF373B /* PopupNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12DC531FBE903900FF373B /* PopupNotificationViewController.swift */; };
+		ED5E9B901FCBB4EE00351A65 /* bugs.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B8F1FCBB4EE00351A65 /* bugs.csv */; };
+		ED5E9B921FCBB50800351A65 /* laboratory.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B911FCBB50700351A65 /* laboratory.csv */; };
+		ED5E9B941FCBB53900351A65 /* treatment.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B931FCBB53900351A65 /* treatment.csv */; };
+		ED5E9B961FCBB57500351A65 /* disease.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B951FCBB57500351A65 /* disease.csv */; };
+		ED5E9B981FCBB58E00351A65 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B971FCBB58E00351A65 /* signs.csv */; };
+		ED5E9B9A1FCBB5A500351A65 /* sources.csv in Resources */ = {isa = PBXBuildFile; fileRef = ED5E9B991FCBB5A500351A65 /* sources.csv */; };
+		ED75FC661FC783CA0001FBD6 /* Settings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4A1FC783CA0001FBD6 /* Settings+CoreDataClass.swift */; };
+		ED75FC671FC783CA0001FBD6 /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4B1FC783CA0001FBD6 /* Settings+CoreDataProperties.swift */; };
+		ED75FC681FC783CA0001FBD6 /* Morphology+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4C1FC783CA0001FBD6 /* Morphology+CoreDataClass.swift */; };
+		ED75FC691FC783CA0001FBD6 /* Morphology+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4D1FC783CA0001FBD6 /* Morphology+CoreDataProperties.swift */; };
+		ED75FC6A1FC783CA0001FBD6 /* Bugs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4E1FC783CA0001FBD6 /* Bugs+CoreDataClass.swift */; };
+		ED75FC6B1FC783CA0001FBD6 /* Bugs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC4F1FC783CA0001FBD6 /* Bugs+CoreDataProperties.swift */; };
+		ED75FC6C1FC783CA0001FBD6 /* Treatment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC501FC783CA0001FBD6 /* Treatment+CoreDataClass.swift */; };
+		ED75FC6D1FC783CA0001FBD6 /* Treatment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC511FC783CA0001FBD6 /* Treatment+CoreDataProperties.swift */; };
+		ED75FC6E1FC783CA0001FBD6 /* KeyPoints+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC521FC783CA0001FBD6 /* KeyPoints+CoreDataClass.swift */; };
+		ED75FC6F1FC783CA0001FBD6 /* KeyPoints+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC531FC783CA0001FBD6 /* KeyPoints+CoreDataProperties.swift */; };
+		ED75FC701FC783CA0001FBD6 /* Signs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC541FC783CA0001FBD6 /* Signs+CoreDataClass.swift */; };
+		ED75FC711FC783CA0001FBD6 /* Signs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC551FC783CA0001FBD6 /* Signs+CoreDataProperties.swift */; };
+		ED75FC721FC783CA0001FBD6 /* Sources+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC561FC783CA0001FBD6 /* Sources+CoreDataClass.swift */; };
+		ED75FC731FC783CA0001FBD6 /* Sources+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC571FC783CA0001FBD6 /* Sources+CoreDataProperties.swift */; };
+		ED75FC741FC783CA0001FBD6 /* General+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC581FC783CA0001FBD6 /* General+CoreDataClass.swift */; };
+		ED75FC751FC783CA0001FBD6 /* General+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC591FC783CA0001FBD6 /* General+CoreDataProperties.swift */; };
+		ED75FC781FC783CA0001FBD6 /* Disease+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC5C1FC783CA0001FBD6 /* Disease+CoreDataClass.swift */; };
+		ED75FC791FC783CA0001FBD6 /* Disease+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC5D1FC783CA0001FBD6 /* Disease+CoreDataProperties.swift */; };
+		ED75FC7A1FC783CA0001FBD6 /* Type+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC5E1FC783CA0001FBD6 /* Type+CoreDataClass.swift */; };
+		ED75FC7B1FC783CA0001FBD6 /* Type+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC5F1FC783CA0001FBD6 /* Type+CoreDataProperties.swift */; };
+		ED75FC7C1FC783CA0001FBD6 /* Laboratory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC601FC783CA0001FBD6 /* Laboratory+CoreDataClass.swift */; };
+		ED75FC7D1FC783CA0001FBD6 /* Laboratory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC611FC783CA0001FBD6 /* Laboratory+CoreDataProperties.swift */; };
+		ED75FC7E1FC783CA0001FBD6 /* GramStain+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC621FC783CA0001FBD6 /* GramStain+CoreDataClass.swift */; };
+		ED75FC7F1FC783CA0001FBD6 /* GramStain+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC631FC783CA0001FBD6 /* GramStain+CoreDataProperties.swift */; };
+		ED75FC801FC783CA0001FBD6 /* Prevention+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC641FC783CA0001FBD6 /* Prevention+CoreDataClass.swift */; };
+		ED75FC811FC783CA0001FBD6 /* Prevention+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75FC651FC783CA0001FBD6 /* Prevention+CoreDataProperties.swift */; };
+		ED99C7801FB8FB33005ECC6D /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99C77F1FB8FB32005ECC6D /* PopoverTableViewController.swift */; };
+		ED99C7821FB916E7005ECC6D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99C7811FB916E7005ECC6D /* WebViewController.swift */; };
+		ED99C7841FB9174C005ECC6D /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99C7831FB9174C005ECC6D /* ReachabilityStatus.swift */; };
+		ED99C7861FB91CE6005ECC6D /* RelatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99C7851FB91CE6005ECC6D /* RelatedViewController.swift */; };
+		ED99C7881FB93209005ECC6D /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99C7871FB93209005ECC6D /* BrowseViewController.swift */; };
+		EDA0486C1FB753A300CCA802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA0486B1FB753A300CCA802 /* AppDelegate.swift */; };
+		EDA0486E1FB753A300CCA802 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA0486D1FB753A300CCA802 /* MainViewController.swift */; };
+		EDA048711FB753A300CCA802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA0486F1FB753A300CCA802 /* Main.storyboard */; };
+		EDA048741FB753A300CCA802 /* Microbiology_Reference.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDA048721FB753A300CCA802 /* Microbiology_Reference.xcdatamodeld */; };
+		EDA048761FB753A300CCA802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA048751FB753A300CCA802 /* Assets.xcassets */; };
+		EDA048791FB753A300CCA802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA048771FB753A300CCA802 /* LaunchScreen.storyboard */; };
+		EDA048811FB7BD8B00CCA802 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA048801FB7BD8B00CCA802 /* DetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED12DC301FBA9BEB00FF373B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED12DC2F1FBA9BEB00FF373B /* CSVImporter.framework in Embed Frameworks */,
+				ED12DC321FBA9BEE00FF373B /* HandySwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED12DC281FBA95A100FF373B /* HandySwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandySwift.framework; sourceTree = "<group>"; };
+		ED12DC291FBA95A100FF373B /* CSVImporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSVImporter.framework; sourceTree = "<group>"; };
+		ED12DC2C1FBA95C700FF373B /* CSVImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImport.swift; sourceTree = "<group>"; };
+		ED12DC3F1FBAA3E600FF373B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		ED12DC531FBE903900FF373B /* PopupNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupNotificationViewController.swift; sourceTree = "<group>"; };
+		ED5E9B8F1FCBB4EE00351A65 /* bugs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bugs.csv; sourceTree = "<group>"; };
+		ED5E9B911FCBB50700351A65 /* laboratory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = laboratory.csv; sourceTree = "<group>"; };
+		ED5E9B931FCBB53900351A65 /* treatment.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treatment.csv; sourceTree = "<group>"; };
+		ED5E9B951FCBB57500351A65 /* disease.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = disease.csv; sourceTree = "<group>"; };
+		ED5E9B971FCBB58E00351A65 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
+		ED5E9B991FCBB5A500351A65 /* sources.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sources.csv; sourceTree = "<group>"; };
+		ED75FC4A1FC783CA0001FBD6 /* Settings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC4B1FC783CA0001FBD6 /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC4C1FC783CA0001FBD6 /* Morphology+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morphology+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC4D1FC783CA0001FBD6 /* Morphology+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morphology+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC4E1FC783CA0001FBD6 /* Bugs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bugs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC4F1FC783CA0001FBD6 /* Bugs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bugs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC501FC783CA0001FBD6 /* Treatment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Treatment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC511FC783CA0001FBD6 /* Treatment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Treatment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC521FC783CA0001FBD6 /* KeyPoints+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPoints+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC531FC783CA0001FBD6 /* KeyPoints+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPoints+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC541FC783CA0001FBD6 /* Signs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Signs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC551FC783CA0001FBD6 /* Signs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Signs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC561FC783CA0001FBD6 /* Sources+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC571FC783CA0001FBD6 /* Sources+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC581FC783CA0001FBD6 /* General+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "General+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC591FC783CA0001FBD6 /* General+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "General+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC5C1FC783CA0001FBD6 /* Disease+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disease+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC5D1FC783CA0001FBD6 /* Disease+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disease+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC5E1FC783CA0001FBD6 /* Type+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC5F1FC783CA0001FBD6 /* Type+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC601FC783CA0001FBD6 /* Laboratory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Laboratory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC611FC783CA0001FBD6 /* Laboratory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Laboratory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC621FC783CA0001FBD6 /* GramStain+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GramStain+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC631FC783CA0001FBD6 /* GramStain+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GramStain+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED75FC641FC783CA0001FBD6 /* Prevention+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prevention+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED75FC651FC783CA0001FBD6 /* Prevention+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prevention+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED99C77F1FB8FB32005ECC6D /* PopoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
+		ED99C7811FB916E7005ECC6D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		ED99C7831FB9174C005ECC6D /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
+		ED99C7851FB91CE6005ECC6D /* RelatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedViewController.swift; sourceTree = "<group>"; };
+		ED99C7871FB93209005ECC6D /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		EDA048681FB753A300CCA802 /* Microbiology Reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microbiology Reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA0486B1FB753A300CCA802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDA0486D1FB753A300CCA802 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EDA048701FB753A300CCA802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDA048731FB753A300CCA802 /* Pathology_Reference.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pathology_Reference.xcdatamodel; sourceTree = "<group>"; };
+		EDA048751FB753A300CCA802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDA048781FB753A300CCA802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDA0487A1FB753A300CCA802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA048801FB7BD8B00CCA802 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDA048651FB753A300CCA802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED12DC2A1FBA95A200FF373B /* HandySwift.framework in Frameworks */,
+				ED12DC2B1FBA95A200FF373B /* CSVImporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDA0485F1FB753A300CCA802 = {
+			isa = PBXGroup;
+			children = (
+				ED75FC4A1FC783CA0001FBD6 /* Settings+CoreDataClass.swift */,
+				ED75FC4B1FC783CA0001FBD6 /* Settings+CoreDataProperties.swift */,
+				ED75FC4C1FC783CA0001FBD6 /* Morphology+CoreDataClass.swift */,
+				ED75FC4D1FC783CA0001FBD6 /* Morphology+CoreDataProperties.swift */,
+				ED75FC4E1FC783CA0001FBD6 /* Bugs+CoreDataClass.swift */,
+				ED75FC4F1FC783CA0001FBD6 /* Bugs+CoreDataProperties.swift */,
+				ED75FC501FC783CA0001FBD6 /* Treatment+CoreDataClass.swift */,
+				ED75FC511FC783CA0001FBD6 /* Treatment+CoreDataProperties.swift */,
+				ED75FC521FC783CA0001FBD6 /* KeyPoints+CoreDataClass.swift */,
+				ED75FC531FC783CA0001FBD6 /* KeyPoints+CoreDataProperties.swift */,
+				ED75FC541FC783CA0001FBD6 /* Signs+CoreDataClass.swift */,
+				ED75FC551FC783CA0001FBD6 /* Signs+CoreDataProperties.swift */,
+				ED75FC561FC783CA0001FBD6 /* Sources+CoreDataClass.swift */,
+				ED75FC571FC783CA0001FBD6 /* Sources+CoreDataProperties.swift */,
+				ED75FC581FC783CA0001FBD6 /* General+CoreDataClass.swift */,
+				ED75FC591FC783CA0001FBD6 /* General+CoreDataProperties.swift */,
+				ED75FC5C1FC783CA0001FBD6 /* Disease+CoreDataClass.swift */,
+				ED75FC5D1FC783CA0001FBD6 /* Disease+CoreDataProperties.swift */,
+				ED75FC5E1FC783CA0001FBD6 /* Type+CoreDataClass.swift */,
+				ED75FC5F1FC783CA0001FBD6 /* Type+CoreDataProperties.swift */,
+				ED75FC601FC783CA0001FBD6 /* Laboratory+CoreDataClass.swift */,
+				ED75FC611FC783CA0001FBD6 /* Laboratory+CoreDataProperties.swift */,
+				ED75FC621FC783CA0001FBD6 /* GramStain+CoreDataClass.swift */,
+				ED75FC631FC783CA0001FBD6 /* GramStain+CoreDataProperties.swift */,
+				ED75FC641FC783CA0001FBD6 /* Prevention+CoreDataClass.swift */,
+				ED75FC651FC783CA0001FBD6 /* Prevention+CoreDataProperties.swift */,
+				ED12DC291FBA95A100FF373B /* CSVImporter.framework */,
+				ED12DC281FBA95A100FF373B /* HandySwift.framework */,
+				EDA0486A1FB753A300CCA802 /* Microbiology Reference */,
+				EDA048691FB753A300CCA802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDA048691FB753A300CCA802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDA048681FB753A300CCA802 /* Microbiology Reference.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDA0486A1FB753A300CCA802 /* Microbiology Reference */ = {
+			isa = PBXGroup;
+			children = (
+				EDA0486B1FB753A300CCA802 /* AppDelegate.swift */,
+				EDA0486D1FB753A300CCA802 /* MainViewController.swift */,
+				EDA048801FB7BD8B00CCA802 /* DetailsViewController.swift */,
+				ED99C7851FB91CE6005ECC6D /* RelatedViewController.swift */,
+				ED99C7871FB93209005ECC6D /* BrowseViewController.swift */,
+				ED99C77F1FB8FB32005ECC6D /* PopoverTableViewController.swift */,
+				ED12DC531FBE903900FF373B /* PopupNotificationViewController.swift */,
+				ED99C7811FB916E7005ECC6D /* WebViewController.swift */,
+				ED12DC3F1FBAA3E600FF373B /* DataManager.swift */,
+				ED12DC2C1FBA95C700FF373B /* CSVImport.swift */,
+				ED99C7831FB9174C005ECC6D /* ReachabilityStatus.swift */,
+				EDA0486F1FB753A300CCA802 /* Main.storyboard */,
+				EDA048751FB753A300CCA802 /* Assets.xcassets */,
+				EDA048771FB753A300CCA802 /* LaunchScreen.storyboard */,
+				EDA0487A1FB753A300CCA802 /* Info.plist */,
+				EDA048721FB753A300CCA802 /* Microbiology_Reference.xcdatamodeld */,
+				ED5E9B8F1FCBB4EE00351A65 /* bugs.csv */,
+				ED5E9B951FCBB57500351A65 /* disease.csv */,
+				ED5E9B911FCBB50700351A65 /* laboratory.csv */,
+				ED5E9B971FCBB58E00351A65 /* signs.csv */,
+				ED5E9B991FCBB5A500351A65 /* sources.csv */,
+				ED5E9B931FCBB53900351A65 /* treatment.csv */,
+			);
+			path = "Microbiology Reference";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDA048671FB753A300CCA802 /* Microbiology Reference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA0487D1FB753A300CCA802 /* Build configuration list for PBXNativeTarget "Microbiology Reference" */;
+			buildPhases = (
+				EDA048641FB753A300CCA802 /* Sources */,
+				EDA048651FB753A300CCA802 /* Frameworks */,
+				EDA048661FB753A300CCA802 /* Resources */,
+				ED12DC301FBA9BEB00FF373B /* Embed Frameworks */,
+				ED1675ED1FDEB56C00B2A9E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Microbiology Reference";
+			productName = "Pathology Reference";
+			productReference = EDA048681FB753A300CCA802 /* Microbiology Reference.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDA048601FB753A300CCA802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Denkensohn;
+				TargetAttributes = {
+					EDA048671FB753A300CCA802 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EDA048631FB753A300CCA802 /* Build configuration list for PBXProject "Microbiology Reference" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDA0485F1FB753A300CCA802;
+			productRefGroup = EDA048691FB753A300CCA802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDA048671FB753A300CCA802 /* Microbiology Reference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDA048661FB753A300CCA802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5E9B961FCBB57500351A65 /* disease.csv in Resources */,
+				ED5E9B981FCBB58E00351A65 /* signs.csv in Resources */,
+				ED5E9B901FCBB4EE00351A65 /* bugs.csv in Resources */,
+				EDA048791FB753A300CCA802 /* LaunchScreen.storyboard in Resources */,
+				EDA048761FB753A300CCA802 /* Assets.xcassets in Resources */,
+				EDA048711FB753A300CCA802 /* Main.storyboard in Resources */,
+				ED5E9B9A1FCBB5A500351A65 /* sources.csv in Resources */,
+				ED5E9B921FCBB50800351A65 /* laboratory.csv in Resources */,
+				ED5E9B941FCBB53900351A65 /* treatment.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED1675ED1FDEB56C00B2A9E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDA048641FB753A300CCA802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED75FC721FC783CA0001FBD6 /* Sources+CoreDataClass.swift in Sources */,
+				ED99C7841FB9174C005ECC6D /* ReachabilityStatus.swift in Sources */,
+				ED75FC7A1FC783CA0001FBD6 /* Type+CoreDataClass.swift in Sources */,
+				ED75FC691FC783CA0001FBD6 /* Morphology+CoreDataProperties.swift in Sources */,
+				ED75FC6F1FC783CA0001FBD6 /* KeyPoints+CoreDataProperties.swift in Sources */,
+				ED75FC681FC783CA0001FBD6 /* Morphology+CoreDataClass.swift in Sources */,
+				EDA048741FB753A300CCA802 /* Microbiology_Reference.xcdatamodeld in Sources */,
+				ED99C7821FB916E7005ECC6D /* WebViewController.swift in Sources */,
+				ED75FC661FC783CA0001FBD6 /* Settings+CoreDataClass.swift in Sources */,
+				ED75FC791FC783CA0001FBD6 /* Disease+CoreDataProperties.swift in Sources */,
+				ED75FC751FC783CA0001FBD6 /* General+CoreDataProperties.swift in Sources */,
+				ED75FC811FC783CA0001FBD6 /* Prevention+CoreDataProperties.swift in Sources */,
+				ED99C7801FB8FB33005ECC6D /* PopoverTableViewController.swift in Sources */,
+				ED75FC7D1FC783CA0001FBD6 /* Laboratory+CoreDataProperties.swift in Sources */,
+				ED75FC711FC783CA0001FBD6 /* Signs+CoreDataProperties.swift in Sources */,
+				EDA0486E1FB753A300CCA802 /* MainViewController.swift in Sources */,
+				ED12DC401FBAA3E600FF373B /* DataManager.swift in Sources */,
+				ED75FC6E1FC783CA0001FBD6 /* KeyPoints+CoreDataClass.swift in Sources */,
+				EDA0486C1FB753A300CCA802 /* AppDelegate.swift in Sources */,
+				ED75FC6A1FC783CA0001FBD6 /* Bugs+CoreDataClass.swift in Sources */,
+				ED75FC671FC783CA0001FBD6 /* Settings+CoreDataProperties.swift in Sources */,
+				ED75FC741FC783CA0001FBD6 /* General+CoreDataClass.swift in Sources */,
+				ED75FC6D1FC783CA0001FBD6 /* Treatment+CoreDataProperties.swift in Sources */,
+				ED75FC7E1FC783CA0001FBD6 /* GramStain+CoreDataClass.swift in Sources */,
+				ED75FC701FC783CA0001FBD6 /* Signs+CoreDataClass.swift in Sources */,
+				ED75FC731FC783CA0001FBD6 /* Sources+CoreDataProperties.swift in Sources */,
+				ED75FC6B1FC783CA0001FBD6 /* Bugs+CoreDataProperties.swift in Sources */,
+				ED99C7881FB93209005ECC6D /* BrowseViewController.swift in Sources */,
+				ED12DC2D1FBA95C700FF373B /* CSVImport.swift in Sources */,
+				ED75FC7F1FC783CA0001FBD6 /* GramStain+CoreDataProperties.swift in Sources */,
+				ED12DC541FBE903900FF373B /* PopupNotificationViewController.swift in Sources */,
+				ED75FC7B1FC783CA0001FBD6 /* Type+CoreDataProperties.swift in Sources */,
+				ED75FC801FC783CA0001FBD6 /* Prevention+CoreDataClass.swift in Sources */,
+				ED99C7861FB91CE6005ECC6D /* RelatedViewController.swift in Sources */,
+				ED75FC6C1FC783CA0001FBD6 /* Treatment+CoreDataClass.swift in Sources */,
+				ED75FC7C1FC783CA0001FBD6 /* Laboratory+CoreDataClass.swift in Sources */,
+				EDA048811FB7BD8B00CCA802 /* DetailsViewController.swift in Sources */,
+				ED75FC781FC783CA0001FBD6 /* Disease+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDA0486F1FB753A300CCA802 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA048701FB753A300CCA802 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA048771FB753A300CCA802 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA048781FB753A300CCA802 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDA0487B1FB753A300CCA802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDA0487C1FB753A300CCA802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDA0487E1FB753A300CCA802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NE59V8732;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Microbiology Reference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usuhs.Bugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDA0487F1FB753A300CCA802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NE59V8732;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Microbiology Reference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usuhs.Bugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDA048631FB753A300CCA802 /* Build configuration list for PBXProject "Microbiology Reference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA0487B1FB753A300CCA802 /* Debug */,
+				EDA0487C1FB753A300CCA802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA0487D1FB753A300CCA802 /* Build configuration list for PBXNativeTarget "Microbiology Reference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA0487E1FB753A300CCA802 /* Debug */,
+				EDA0487F1FB753A300CCA802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDA048721FB753A300CCA802 /* Microbiology_Reference.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDA048731FB753A300CCA802 /* Pathology_Reference.xcdatamodel */,
+			);
+			currentVersion = EDA048731FB753A300CCA802 /* Pathology_Reference.xcdatamodel */;
+			path = Microbiology_Reference.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EDA048601FB753A300CCA802 /* Project object */;
+}

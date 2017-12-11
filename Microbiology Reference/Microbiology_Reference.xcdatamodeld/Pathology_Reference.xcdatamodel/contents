@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17B48" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bugs" representedClassName="Bugs" syncable="YES">
+        <attribute name="last_accessed" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="match_basis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_diagnosis" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_diagnosis" inverseEntity="Bugs" syncable="YES"/>
+        <relationship name="related_disease" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Disease" inverseName="related_bug" inverseEntity="Disease" syncable="YES"/>
+        <relationship name="related_general" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="General" inverseName="related_bug" inverseEntity="General" syncable="YES"/>
+        <relationship name="related_gramstain" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GramStain" inverseName="related_bug" inverseEntity="GramStain" syncable="YES"/>
+        <relationship name="related_keypoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeyPoints" inverseName="related_bug" inverseEntity="KeyPoints" syncable="YES"/>
+        <relationship name="related_laboratory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Laboratory" inverseName="related_bug" inverseEntity="Laboratory" syncable="YES"/>
+        <relationship name="related_morphology" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Morphology" inverseName="related_bug" inverseEntity="Morphology" syncable="YES"/>
+        <relationship name="related_prevention" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Prevention" inverseName="related_bug" inverseEntity="Prevention" syncable="YES"/>
+        <relationship name="related_signs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Signs" inverseName="related_bug" inverseEntity="Signs" syncable="YES"/>
+        <relationship name="related_source" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sources" inverseName="related_bug" inverseEntity="Sources" syncable="YES"/>
+        <relationship name="related_treatments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Treatment" inverseName="related_bug" inverseEntity="Treatment" syncable="YES"/>
+        <relationship name="related_type" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Type" inverseName="related_bug" inverseEntity="Type" syncable="YES"/>
+    </entity>
+    <entity name="Disease" representedClassName="Disease" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_disease" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="General" representedClassName="General" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_general" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="GramStain" representedClassName="GramStain" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_gramstain" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="KeyPoints" representedClassName="KeyPoints" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_keypoints" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Laboratory" representedClassName="Laboratory" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_laboratory" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Morphology" representedClassName="Morphology" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_morphology" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Prevention" representedClassName="Prevention" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_prevention" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Settings" representedClassName="Settings" syncable="YES">
+        <attribute name="dataversion" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Signs" representedClassName="Signs" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_signs" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Sources" representedClassName="Sources" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_source" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Treatment" representedClassName="Treatment" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sideeffect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_treatments" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <entity name="Type" representedClassName="Type" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="related_bug" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bugs" inverseName="related_type" inverseEntity="Bugs" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bugs" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="Disease" positionX="-36" positionY="54" width="128" height="90"/>
+        <element name="General" positionX="0" positionY="90" width="128" height="75"/>
+        <element name="GramStain" positionX="9" positionY="99" width="128" height="75"/>
+        <element name="KeyPoints" positionX="-9" positionY="81" width="128" height="75"/>
+        <element name="Laboratory" positionX="-27" positionY="54" width="128" height="90"/>
+        <element name="Morphology" positionX="18" positionY="117" width="128" height="75"/>
+        <element name="Prevention" positionX="-27" positionY="72" width="128" height="75"/>
+        <element name="Settings" positionX="0" positionY="99" width="128" height="60"/>
+        <element name="Signs" positionX="-18" positionY="72" width="128" height="90"/>
+        <element name="Sources" positionX="-27" positionY="63" width="128" height="90"/>
+        <element name="Treatment" positionX="-36" positionY="9" width="128" height="90"/>
+        <element name="Type" positionX="-18" positionY="72" width="128" height="75"/>
+    </elements>
+</model>
